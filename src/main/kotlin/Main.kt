@@ -14,27 +14,9 @@ fun main1() {
         println("i = $i")
     }
 }
+
 // 어디 있든지 main에서 시작함
 fun main() {
-    var a = 3
-
-    a++
-    println(a)
-
-    a--
-    println(a)
-
-    var b = 10
-
-    b = b + 5
-    println(b)
-    b += 5
-    println(b)
-
-    b = b - 5
-    println(b)
-    b -= 5
-    println(b)
-
-    main1()
+    val dataString = readLine()
+    println("나는 ${dataString}를 입력했어요!")
 }
