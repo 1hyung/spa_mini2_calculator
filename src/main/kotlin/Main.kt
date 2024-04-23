@@ -1,4 +1,3 @@
-/*
 package org.example
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -15,7 +14,6 @@ fun main1() {
         println("i = $i")
     }
 }
-*/
 // 어디 있든지 main에서 시작함
 fun main() {
     var a = 3
@@ -38,4 +36,5 @@ fun main() {
     b -= 5
     println(b)
 
+    main1()
 }
