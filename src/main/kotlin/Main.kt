@@ -17,6 +17,7 @@ fun main1() {
 
 // 어디 있든지 main에서 시작함
 fun main() {
-    val dataString = readLine()
-    println("나는 ${dataString}를 입력했어요!")
+    val dataNumber = readLine()!!.toInt()
+    val sum = dataNumber + 3
+    println("입력은 ${dataNumber}인데 3을 더해서 ${sum}이예요!")
 }
