@@ -25,4 +25,17 @@ fun main() {
 
     a--
     println(a)
+
+    var b = 10
+
+    b = b + 5
+    println(b)
+    b += 5
+    println(b)
+
+    b = b - 5
+    println(b)
+    b -= 5
+    println(b)
+
 }
