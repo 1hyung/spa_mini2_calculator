@@ -1,3 +1,4 @@
+/*
 package org.example
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -20,4 +21,19 @@ fun main() {
     val dataNumber = readLine()!!.toInt()
     val sum = dataNumber + 3
     println("입력은 ${dataNumber}인데 3을 더해서 ${sum}이예요!")
+}*/
+//fun main() {
+//    if (false) {
+//        println("if문 안에 들어왔어요")
+//    }
+//}
+fun main() {
+    when (true) {
+        true -> {
+            println("값이 true입니다")
+        }
+        false  -> {
+            println("값이 false입니다")
+        }
+    }
 }
