@@ -54,14 +54,30 @@ fun main() {
             println("환영합니다 ${myName}님!")
         }*/
 
-    //티켓 100개가 전부 매진되면 더 이상 구매할 수 없다고 알림창을 띄워줘요의 예시입니다.
+    /*
+        //티켓 100개가 전부 매진되면 더 이상 구매할 수 없다고 알림창을 띄워줘요의 예시입니다.
 
-    var ticketCount = 0
+        var ticketCount = 0
 
-    if (ticketCount > 0) {
-        println("티켓을 구매했어요")
+        if (ticketCount > 0) {
+            println("티켓을 구매했어요")
+        } else {
+            println("티켓이 모두 매진되었습니다")
+        }
+    */
+//기말고사 평균점수 등급 나누기
+    var koreanScore = readLine()!!.toInt() // 국어점수 입력
+    var englishScore = readLine()!!.toInt() // 영어점수 입력
+    var mathScore = readLine()!!.toInt() // 수학점수 입력
+    var average = (koreanScore + englishScore + mathScore) / 3
+
+    if (average >= 90) {
+        println("당신의 등급은 A입니다")
+    } else if (average >= 80) {
+        println("당신의 등급은 B입니다")
+    } else if (average >= 70) {
+        println("당신의 등급은 C입니다")
     } else {
-        println("티켓이 모두 매진되었습니다")
+        println("당신의 등급은 F입니다")
     }
-
 }
