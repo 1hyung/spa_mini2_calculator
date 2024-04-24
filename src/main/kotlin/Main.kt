@@ -44,15 +44,24 @@ fun main() {
                 println("값이 3과 5가 아닙니다")
             }
         }*/
-//특정 이름을 가진 사람일때 축하메시지를 띄워줘요
-    var eventName = "참새"
-    var myName = "참새"
+    /*//특정 이름을 가진 사람일때 축하메시지를 띄워줘요
+        var eventName = "참새"
+        var myName = "참새"
 
-    if (myName == eventName) {
-        println("환영합니다 ${myName}님! 이벤트에 당첨됐어요!")
+        if (myName == eventName) {
+            println("환영합니다 ${myName}님! 이벤트에 당첨됐어요!")
+        } else {
+            println("환영합니다 ${myName}님!")
+        }*/
+
+    //티켓 100개가 전부 매진되면 더 이상 구매할 수 없다고 알림창을 띄워줘요의 예시입니다.
+
+    var ticketCount = 0
+
+    if (ticketCount > 0) {
+        println("티켓을 구매했어요")
     } else {
-        println("환영합니다 ${myName}님!")
+        println("티켓이 모두 매진되었습니다")
     }
-
 
 }
