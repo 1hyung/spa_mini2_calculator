@@ -2,6 +2,7 @@ package org.example
 
 fun main() {
     //Int, Double는 숫자라 !! 필요, String은 문자라서 !! 필요 없음
+    //val은 변함없는 값, var은 변화하는 값이라서 var 사용
     //안내 추가
     // readLine()!!이 readln()으로 변경 이유 : 추후 추가 예정
     println("첫번째 값은?")
