@@ -65,40 +65,51 @@ fun main() {
             println("티켓이 모두 매진되었습니다")
         }
     */
-    /*//기말고사 평균점수 등급 나누기
-        var koreanScore = readLine()!!.toInt() // 국어점수 입력
-        var englishScore = readLine()!!.toInt() // 영어점수 입력
-        var mathScore = readLine()!!.toInt() // 수학점수 입력
-        var average = (koreanScore + englishScore + mathScore) / 3
+    /*    //기말고사 평균점수 등급 나누기
+
+        val koreanScore = readLine()!!.toInt()
+        val englishScore = readLine()!!.toInt()
+        val mathScore = readLine()!!.toInt()
+
+        val average = (koreanScore + englishScore + mathScore) / 3
 
         if (average >= 90) {
-            println("당신의 등급은 A입니다")
+            println("당신의 등급은 A입니다.")
         } else if (average >= 80) {
-            println("당신의 등급은 B입니다")
+            println("당신의 등급은 B입니다.")
         } else if (average >= 70) {
-            println("당신의 등급은 C입니다")
+            println("당신의 등급은 C입니다.")
         } else {
-            println("당신의 등급은 F입니다")
+            println("당신의 등급은 F입니다.")
         }*/
 
-    //행운의 숫자를 뽑아 운세를 알려주기
-    var todayNumber = readLine()!!.toInt()
 
-    when (todayNumber) {
-        1 -> {
-            println("재물이 들어올것입니다")
-        }
+    /*    //행운의 숫자를 뽑아 운세를 알려주기
+        var todayNumber = readLine()!!.toInt()
 
-        2 -> {
-            println("검정색을 조심하세요")
-        }
+        when (todayNumber) {
+            1 -> {
+                println("재물이 들어올것입니다")
+            }
 
-        3 -> {
-            println("지인과의 관계에 조심하세요")
-        }
+            2 -> {
+                println("검정색을 조심하세요")
+            }
 
-        else -> {
-            println("물을 조심하십시오...")
-        }
+            3 -> {
+                println("지인과의 관계에 조심하세요")
+            }
+
+            else -> {
+                println("물을 조심하십시오...")
+            }
+        }*/
+
+    val age = 25
+
+    val isAdult = if (age >= 19) {
+        true
+    } else {
+        false
     }
 }
