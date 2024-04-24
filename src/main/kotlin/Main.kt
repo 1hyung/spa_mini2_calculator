@@ -28,12 +28,20 @@ fun main() {
 //    }
 //}
 fun main() {
-    when (true) {
-        true -> {
-            println("값이 true입니다")
+
+    val value = 123
+
+    when (value) {
+        3 -> {
+            println("값이 3입니다")
         }
-        false  -> {
-            println("값이 false입니다")
+
+        5 -> {
+            println("값이 5입니다")
+        }
+
+        else -> {
+            println("값이 3과 5가 아닙니다")
         }
     }
 }
