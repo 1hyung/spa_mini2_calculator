@@ -29,19 +29,28 @@ fun main() {
 //}
 fun main() {
 
-    val value = 123
+    /*    val value = 123
 
-    when (value) {
-        3 -> {
-            println("값이 3입니다")
-        }
+        when (value) {
+            3 -> {
+                println("값이 3입니다")
+            }
 
-        5 -> {
-            println("값이 5입니다")
-        }
+            5 -> {
+                println("값이 5입니다")
+            }
 
-        else -> {
-            println("값이 3과 5가 아닙니다")
-        }
+            else -> {
+                println("값이 3과 5가 아닙니다")
+            }
+        }*/
+//특정 이름을 가진 사람일때 축하메시지를 띄워줘요
+    var eventName = "참새"
+    var myName = "참새"
+
+    if (myName == eventName) {
+        println("환영합니다 ${myName}님! 이벤트에 당첨됐어요!")
+    } else {
+        println("환영합니다 ${myName}님!")
     }
 }
