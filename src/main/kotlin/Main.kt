@@ -204,13 +204,19 @@ fun main() {
             }
 
         }*/
-    val num1 = readLine()!!.toInt()
-    val num2 = readLine()!!.toInt()
-
-    sum(num1, num2)
+//    val num1 = readLine()!!.toInt()
+//    val num2 = readLine()!!.toInt()
+//
+//    sum(num1, num2)
+    displayInfo()
 }
 
-fun sum(int1: Int, int2: Int) {
+/*fun sum(int1: Int, int2: Int) {
     val result = int1 + int2
     println("result is ${result}")
+}*/
+
+fun displayInfo(): Unit {
+    println("오늘의 날씨는 화창합니다")
+    println("오늘은 검정색을 조심하세요")
 }
