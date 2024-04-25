@@ -54,6 +54,7 @@ fun main(){ //
     println(mutableList)
 }*/
 
+/*
 fun main() { //key의 형태는 string이다. value의 형태는 int다.
     val fruitCounts: MutableMap<String, Int> = mutableMapOf("apple" to 5, "banana" to 3, "orange" to 8)
     // apple이란 변수 만들고 5 넣고, banana라는 변수 만들고 3 넣고 orange라는 변수 넣고 8 넣고 변수를 각각 넣을 수 있지만 하나의 변수로
@@ -69,4 +70,17 @@ fun main() { //key의 형태는 string이다. value의 형태는 int다.
     println(fruitCounts)
 
     val appleCount = fruitCounts["apple"]  // 5
+}*/
+
+fun main() { //람다 표현식{a와 b를 받아서 -> 곱한 값을 반환하는 함수}을 multiply라는 변수에 넣는다.
+    //형태는 int 값 2개를 받아서 int를 반환하는 이름 없는 함수가 multifly라는 변수 안에 들어간다.
+    val multiply: (Int, Int) -> Int = { a, b -> a * b }
+    val result = multiply(5, 3) // 결과: 15
+    println(result)
+
+
+/*    val numbers = listOf(1, 2, 3, 4, 5)
+// forEach는 컬렉션의 각 요소에 대해 주어진 람다 표현식을 실행합니다.
+    val printFunction: (Int) -> Unit = { value -> println(value) }
+    numbers.forEach { printFunction }*/
 }
