@@ -1,3 +1,4 @@
+/*
 fun main() {
     val student1Score = 95
     val student2Score = 27
@@ -30,4 +31,10 @@ fun checkRank(score: Int): String {
 //    } else {
 //        return "D"
 //    }
-// }
+// }*/
+fun main(){ // 변수를 만들 때는 var
+    //Int형이 들어갈 수 있는 MutableList <타입>을 알려줌, 1,2,3이 들어간 mutableList가 하나 만들어짐
+    var mutableList: MutableList<Int> = mutableListOf(1,2,3)
+
+    println(mutableList)
+}
