@@ -43,12 +43,30 @@ fun main(){ // 변수를 만들 때는 var
     println(mutableList[1])
 }*/
 
+/*
 fun main(){ //
     var mutableList: MutableList<Int> = mutableListOf(1,2,3)
 //MutableList에 추가하는 방법
     mutableList.add(5)
     //MutableList에 요소를 지우는 방법
     mutableList.remove(1)
-    println(mutableList)
 
+    println(mutableList)
+}*/
+
+fun main() { //key의 형태는 string이다. value의 형태는 int다.
+    val fruitCounts: MutableMap<String, Int> = mutableMapOf("apple" to 5, "banana" to 3, "orange" to 8)
+    // apple이란 변수 만들고 5 넣고, banana라는 변수 만들고 3 넣고 orange라는 변수 넣고 8 넣고 변수를 각각 넣을 수 있지만 하나의 변수로
+    //묶은 것이 바로 map, map도 값을 추가하고, 삭제하고, 수정하고 가능
+    println(fruitCounts)
+    //map 조회하기
+    println(fruitCounts["apple"])
+    //추가 lemon이라는 key로 값을 넣은 것이다.
+    fruitCounts["lemon"] = 12
+    println(fruitCounts)
+    //지우기
+    fruitCounts.remove("banana")
+    println(fruitCounts)
+
+    val appleCount = fruitCounts["apple"]  // 5
 }
