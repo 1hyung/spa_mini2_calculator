@@ -186,33 +186,31 @@ fun main() {
 
         println(int + 123)*/
 
-    /*    //스마트 캐스트
-        val value: Any = "this is any type value"
+    /*        //스마트 캐스트
+            val value: Any = "this is any type value"
 
-        val stringValue = "this is a string value"
+            val stringValue = "this is a string value"
 
-        stringValue.length
+            stringValue.length
 
-        if (value is String) { //어떤 타입인지 검사해서 사용
-            // value가 String 타입이면 자동으로 String으로 형변환된다.
-            println(value.length)
-        }
+            if (value is String) { //어떤 타입인지 검사해서 사용
+                // value가 String 타입이면 자동으로 String으로 형변환된다.
+                println(value.length)
+            }
 
-        fun printLength(value: Any) {
-            value as String
-            println(value.length)
+            fun printLength(value: Any) {
+                value as String
+                println(value.length)
+            }
+
         }*/
+    val num1 = readLine()!!.toInt()
+    val num2 = readLine()!!.toInt()
 
-    fun main() {
-        var num1 = readLine()!!.toInt()
-        var num2 = readLine()!!.toInt()
+    sum(num1, num2)
+}
 
-        // sum이라는 이름의 메소드를 호출!
-        sum(num1, num2)
-    }
-
-    fun sum(num1: Int, num2: Int) {
-        var result = num1 + num2
-        println("num1과 num2의 덧셈결과는 ${result}입니다.")
-    }
+fun sum(int1: Int, int2: Int) {
+    val result = int1 + int2
+    println("result is ${result}")
 }
