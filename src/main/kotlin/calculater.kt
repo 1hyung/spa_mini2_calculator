@@ -19,6 +19,7 @@ fun main() {
     //Int로 하면 소수점 계산하려면 Double
 
 //lv2
+    //람다 표현식으로 변경
     val Add: (n1: Double, b: Double) -> Double = { a, b -> a + b }
     println(Add(n1, n2))
     val Substract: (n1: Double, b: Double) -> Double = { a, b -> a - b }
@@ -29,38 +30,38 @@ fun main() {
     println(Divide(n1, n2))
     val remain: (n1: Double, b: Double) -> Double = { a, b -> a % b }
     println(remain(n1, n2))
-/*    when (op) {
-        "+" -> {
-            // 덧셈일 때
-            println("${n1 + n2}")
-        }
+    /*    when (op) {
+            "+" -> {
+                // 덧셈일 때
+                println("${n1 + n2}")
+            }
 
 
-        "-" -> {
-            // 뺄셈일 때
-            println("${n1 - n2}")
-        }
+            "-" -> {
+                // 뺄셈일 때
+                println("${n1 - n2}")
+            }
 
-        "*" -> {
-            // 곱셈일 때
-            println("${n1 * n2}")
-        }
+            "*" -> {
+                // 곱셈일 때
+                println("${n1 * n2}")
+            }
 
-        "/" -> {
-            // 나눗셈일 때
-            println("${n1 / n2}")
-        }
+            "/" -> {
+                // 나눗셈일 때
+                println("${n1 / n2}")
+            }
 
-        "%" -> {
-            // 나머지연산일 때
-            println("${n1 % n2}")
-        }
+            "%" -> {
+                // 나머지연산일 때
+                println("${n1 % n2}")
+            }
 
-        else -> {
-            // 잘못된 연산자 일 때
-            println("잘못된 연산입니다.")
-        }
-    }*/
+            else -> {
+                // 잘못된 연산자 일 때
+                println("잘못된 연산입니다.")
+            }
+        }*/
     //-> 해봐야지
     /*    if (op == "+") {
         println("${n1 + n2}")
@@ -87,13 +88,26 @@ fun main() {
     //자동실행이 됐으면 좋겠다!!
 }
 
-/*
-//class는 고유의 특징값 "속성"과 기능의 구현인 "함수"로 이루어져 있다. 아직 함수는 구현 못함
-class calculator(var n1: Double, var n2: Double, op: String) {// 실제 기능을 작동할 함수 fun 어쩌구 저쩌구}
-
-    fun sum(n1: Double, n2: Double) {
-        val result = n1 + n2
-        println("result is ${result}")
+class calculator(var n1: Double, var n2: Double, op: String) {
+    // 실제 기능을 작동할 함수 fun 어쩌구 저쩌구}
+    fun add(n1: Double, b: Double): Double {
+        return n1 + n2
     }
+
+    fun Substract(n1: Double, b: Double): Double {
+        return n1 + n2
+    }
+
+    fun multiply(n1: Double, b: Double): Double {
+        return n1 + n2
+    }
+
+    fun Divide(n1: Double, b: Double): Double {
+        return n1 + n2
+    }
+
+    fun remain(n1: Double, b: Double): Double {
+        return n1 + n2
+    }
+
 }
-*/
