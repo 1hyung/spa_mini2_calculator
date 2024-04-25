@@ -1,3 +1,40 @@
+/*fun sum(int1: Int, int2: Int) {
+    val result = int1 + int2
+    println("result is ${result}")
+}*/
+fun main() {
+    val student1Score = 95
+    val student2Score = 27
+    val student3Score = 88
+
+    val student1Rank = checkRank(student1Score)
+    val student2Rank = checkRank(student2Score)
+    val student3Rank = checkRank(student3Score)
+
+    println("학생 1의 등급은: ${student1Rank}")
+    println("학생 2의 등급은: ${student2Rank}")
+    println("학생 3의 등급은: ${student3Rank}")
+}
+
+fun checkRank(score: Int): String {
+    return when (score) {
+        in 90..100 -> return "A"
+        in 80..89 -> return "B"
+        in 70..79 -> return "C"
+        else -> return "D"
+    }
+}
+//    Kotlin 컨벤션을 따르지 않은 형태
+//    if(score >= 90) {
+//        return "A"
+//    } else if(score >= 80) {
+//        return "B"
+//    } else if(score >= 70) {
+//        return "C"
+//    } else {
+//        return "D"
+//    }
+// }
 /*
 package org.example
 
@@ -27,9 +64,11 @@ fun main() {
 //        println("if문 안에 들어왔어요")
 //    }
 //}
+/* 2-7 정보 알려주는 메소드까지 구현
 fun main() {
 
-    /*    val value = 123
+    */
+/*    val value = 123
 
         when (value) {
             3 -> {
@@ -43,8 +82,11 @@ fun main() {
             else -> {
                 println("값이 3과 5가 아닙니다")
             }
-        }*/
-    /*//특정 이름을 가진 사람일때 축하메시지를 띄워줘요
+        }*//*
+
+    */
+/*//*
+/특정 이름을 가진 사람일때 축하메시지를 띄워줘요
         var eventName = "참새"
         var myName = "참새"
 
@@ -52,9 +94,11 @@ fun main() {
             println("환영합니다 ${myName}님! 이벤트에 당첨됐어요!")
         } else {
             println("환영합니다 ${myName}님!")
-        }*/
+        }*//*
 
-    /*
+
+    */
+/*
         //티켓 100개가 전부 매진되면 더 이상 구매할 수 없다고 알림창을 띄워줘요의 예시입니다.
 
         var ticketCount = 0
@@ -64,8 +108,10 @@ fun main() {
         } else {
             println("티켓이 모두 매진되었습니다")
         }
+    *//*
+
     */
-    /*    //기말고사 평균점수 등급 나누기
+/*    //기말고사 평균점수 등급 나누기
 
         val koreanScore = readLine()!!.toInt()
         val englishScore = readLine()!!.toInt()
@@ -81,10 +127,12 @@ fun main() {
             println("당신의 등급은 C입니다.")
         } else {
             println("당신의 등급은 F입니다.")
-        }*/
+        }*//*
 
 
-    /*    //행운의 숫자를 뽑아 운세를 알려주기
+
+    */
+/*    //행운의 숫자를 뽑아 운세를 알려주기
         var todayNumber = readLine()!!.toInt()
 
         when (todayNumber) {
@@ -103,17 +151,22 @@ fun main() {
             else -> {
                 println("물을 조심하십시오...")
             }
-        }*/
-    /*//조건식에서 값을 반환하기
+        }*//*
+
+    */
+/*//*
+/조건식에서 값을 반환하기
         val age = 25
 
         val isAdult = if (age >= 19) {
             true
         } else {
             false
-        }*/
+        }*//*
 
-    /*    // for의 구조 코틀린의 for 반복문은 다양한 형태가 존재합니다.
+
+    */
+/*    // for의 구조 코틀린의 for 반복문은 다양한 형태가 존재합니다.
 
     // 리스트(묶음)에서 하나의 요소들을 반복해서 가져오는 경우입니다
         for (요소 in 리스트) {
@@ -125,25 +178,33 @@ fun main() {
     // until을 생략해서 시작값..마지막값으로 사용할수도 있어요
         for (인덱스 in 시작값 until 마지막값) {
             소스코드(로직)
-        }*/
+        }*//*
+
 
     //내 이름을 10번 출력해요 (for)의 예시입니다
 
-    /*// 1부터 10까지 변화하는 i변수(for)
+    */
+/*//*
+/ 1부터 10까지 변화하는 i변수(for)
                 for(i in 1..10) {
                     println("${i}번째: 내 이름은 참새")
-                }*/
+                }*//*
+
 
     // 1부터 10까지 변화하는 i변수(while)
 
-    /*    var i = 0
+    */
+/*    var i = 0
 
         while(i <= 10) {
             println("${i}번째: 내 이름은 참새")
             i++
-        }*/
+        }*//*
 
-    /*//전화번호부에서 이름이 “참새”인 사람을 찾을때
+
+    */
+/*//*
+/전화번호부에서 이름이 “참새”인 사람을 찾을때
         var infos = arrayOf("꿩", "닭", "참새", "오목눈이", "공작새")
 
         for (info in infos) {
@@ -157,9 +218,11 @@ fun main() {
                 continue
                 println(2)
             }
-        }*/
+        }*//*
 
-    /*    //배고픈 고양이에게 사료 주기
+
+    */
+/*    //배고픈 고양이에게 사료 주기
         var catStatus = false
         println("고양이는 매우 배고픕니다..")
         println("사료를 10번 먹여주세요")
@@ -176,17 +239,21 @@ fun main() {
         catStatus = true
         if (catStatus == true) {
             println("배부른 고양이입니다")
-        }*/
+        }*//*
 
-    /*    val intString: String = "123"
+
+    */
+/*    val intString: String = "123"
     //String형 + Int형 그냥 붙여버림
         println(intString + 5)
 
         val int = intString.toInt()
 
-        println(int + 123)*/
+        println(int + 123)*//*
 
-    /*        //스마트 캐스트
+
+    */
+/*        //스마트 캐스트
             val value: Any = "this is any type value"
 
             val stringValue = "this is a string value"
@@ -203,7 +270,8 @@ fun main() {
                 println(value.length)
             }
 
-        }*/
+        }*//*
+
 //    val num1 = readLine()!!.toInt()
 //    val num2 = readLine()!!.toInt()
 //
@@ -211,12 +279,7 @@ fun main() {
     displayInfo()
 }
 
-/*fun sum(int1: Int, int2: Int) {
-    val result = int1 + int2
-    println("result is ${result}")
-}*/
-
 fun displayInfo(): Unit {
     println("오늘의 날씨는 화창합니다")
     println("오늘은 검정색을 조심하세요")
-}
+}*/
