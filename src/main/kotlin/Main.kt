@@ -37,4 +37,6 @@ fun main(){ // 변수를 만들 때는 var
     var mutableList: MutableList<Int> = mutableListOf(1,2,3)
 
     println(mutableList)
+    // 두번째 있는 값에 접근하고 싶다면 []안에 숫자 1 입력, [] 안의 index는 0부터 시작
+    println(mutableList[1])
 }
