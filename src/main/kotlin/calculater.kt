@@ -1,5 +1,6 @@
 package org.example
-
+//람다표현식으로 변경하고 class 안에 fun 만들어서 넣고, calculator class 적용하려고 하니 막힘.
+//op 입력이 잘못되도 값이 계산이 되고, 값이 5개가 출력되는 것을 변경하고 싶음.
 import java.lang.Double.sum
 
 //calculaor 실행이 안돼서 보니 fun이 calculator 안에 들어있어서 그럼
