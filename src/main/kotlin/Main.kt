@@ -159,42 +159,60 @@ fun main() {
             }
         }*/
 
-/*    //배고픈 고양이에게 사료 주기
-    var catStatus = false
-    println("고양이는 매우 배고픕니다..")
-    println("사료를 10번 먹여주세요")
+    /*    //배고픈 고양이에게 사료 주기
+        var catStatus = false
+        println("고양이는 매우 배고픕니다..")
+        println("사료를 10번 먹여주세요")
 
 
-    // 고양이가 현재 배고프니까(false) 사료 배급가능
-    if (catStatus == false) {
-        for (idx in 0..9) {
-            println("${idx}번째: 냠냠")
+        // 고양이가 현재 배고프니까(false) 사료 배급가능
+        if (catStatus == false) {
+            for (idx in 0..9) {
+                println("${idx}번째: 냠냠")
+            }
         }
+
+        // 사료를 10번 준 이후의 상태변화
+        catStatus = true
+        if (catStatus == true) {
+            println("배부른 고양이입니다")
+        }*/
+
+    /*    val intString: String = "123"
+    //String형 + Int형 그냥 붙여버림
+        println(intString + 5)
+
+        val int = intString.toInt()
+
+        println(int + 123)*/
+
+    /*    //스마트 캐스트
+        val value: Any = "this is any type value"
+
+        val stringValue = "this is a string value"
+
+        stringValue.length
+
+        if (value is String) { //어떤 타입인지 검사해서 사용
+            // value가 String 타입이면 자동으로 String으로 형변환된다.
+            println(value.length)
+        }
+
+        fun printLength(value: Any) {
+            value as String
+            println(value.length)
+        }*/
+
+    fun main() {
+        var num1 = readLine()!!.toInt()
+        var num2 = readLine()!!.toInt()
+
+        // sum이라는 이름의 메소드를 호출!
+        sum(num1, num2)
     }
 
-    // 사료를 10번 준 이후의 상태변화
-    catStatus = true
-    if (catStatus == true) {
-        println("배부른 고양이입니다")
-    }*/
-
-/*    val intString: String = "123"
-//String형 + Int형 그냥 붙여버림
-    println(intString + 5)
-
-    val int = intString.toInt()
-
-    println(int + 123)*/
-
-    //스마트 캐스트
-    val value: Any = "this is any type value"
-
-    val stringValue = "this is a string value"
-
-    stringValue.length
-
-    if (value is String) { //어떤 타입인지 검사해서 사용
-        // value가 String 타입이면 자동으로 String으로 형변환된다.
-        println(value.length)
+    fun sum(num1: Int, num2: Int) {
+        var result = num1 + num2
+        println("num1과 num2의 덧셈결과는 ${result}입니다.")
     }
 }
