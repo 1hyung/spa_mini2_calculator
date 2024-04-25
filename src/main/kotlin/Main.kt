@@ -32,6 +32,8 @@ fun checkRank(score: Int): String {
 //        return "D"
 //    }
 // }*/
+
+/*//리스트 안의 숫자 접근 방법
 fun main(){ // 변수를 만들 때는 var
     //Int형이 들어갈 수 있는 MutableList <타입>을 알려줌, 1,2,3이 들어간 mutableList가 하나 만들어짐
     var mutableList: MutableList<Int> = mutableListOf(1,2,3)
@@ -39,4 +41,14 @@ fun main(){ // 변수를 만들 때는 var
     println(mutableList)
     // 두번째 있는 값에 접근하고 싶다면 []안에 숫자 1 입력, [] 안의 index는 0부터 시작
     println(mutableList[1])
+}*/
+
+fun main(){ //
+    var mutableList: MutableList<Int> = mutableListOf(1,2,3)
+//MutableList에 추가하는 방법
+    mutableList.add(5)
+    //MutableList에 요소를 지우는 방법
+    mutableList.remove(1)
+    println(mutableList)
+
 }
