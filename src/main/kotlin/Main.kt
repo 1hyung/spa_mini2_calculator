@@ -159,7 +159,7 @@ fun main() {
             }
         }*/
 
-    //배고픈 고양이에게 사료 주기
+/*    //배고픈 고양이에게 사료 주기
     var catStatus = false
     println("고양이는 매우 배고픕니다..")
     println("사료를 10번 먹여주세요")
@@ -176,5 +176,25 @@ fun main() {
     catStatus = true
     if (catStatus == true) {
         println("배부른 고양이입니다")
+    }*/
+
+/*    val intString: String = "123"
+//String형 + Int형 그냥 붙여버림
+    println(intString + 5)
+
+    val int = intString.toInt()
+
+    println(int + 123)*/
+
+    //스마트 캐스트
+    val value: Any = "this is any type value"
+
+    val stringValue = "this is a string value"
+
+    stringValue.length
+
+    if (value is String) { //어떤 타입인지 검사해서 사용
+        // value가 String 타입이면 자동으로 String으로 형변환된다.
+        println(value.length)
     }
 }
