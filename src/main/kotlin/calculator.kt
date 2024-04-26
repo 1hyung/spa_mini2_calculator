@@ -7,31 +7,31 @@ fun main() {
     println("두번째 값은?")
     var n2 = readln().toDouble()
 
-    val caculater = calculator(n1, n2)
+    val calculator = calculator(n1, n2)
     when (op) {
         "+" -> {
-            caculater.Add()
-            println(caculater.Add())
+            val Add = calculator.Add()
+            println(Add)
         }
 
         "-" -> {
-            caculater.Sub()
-            println(caculater.Sub())
+            val Sub = calculator.Sub()
+            println(Sub)
         }
 
         "*" -> {
-            caculater.Multiply()
-            println(caculater.Multiply())
+            val Multiply = calculator.Multiply()
+            println(Multiply)
         }
 
         "/" -> {
-            caculater.Divide()
-            println(caculater.Divide())
+            val Divide = calculator.Divide()
+            println(Divide)
         }
 
         "%" -> {
-            caculater.remain()
-            println(caculater.remain())
+            val remain = calculator.remain()
+            println(remain)
         }
 
         else -> println("잘못된 입력입니다. 입력을 확인해주세요.")
