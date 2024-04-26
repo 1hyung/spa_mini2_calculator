@@ -87,35 +87,35 @@ class calculator(var n1: Double, var n2: Double) {
 ```
 ## When식 적용
 ```
-val caculater = calculator(n1, n2)
-when (op) {
-    "+" -> {
-        val Add = caculater.Add()
-        println(Add)
-    }
+val calculator = calculator(n1, n2)
+    when (op) {
+        "+" -> {
+            val Add = calculator.Add()
+            println(Add)
+        }
 
-    "-" -> {
-        val Sub = caculater.Sub()
-        println(Sub)
-    }
+        "-" -> {
+            val Sub = calculator.Sub()
+            println(Sub)
+        }
 
-    "*" -> {
-        val Multiply = caculater.Multiply()
-        println(Multiply)
-    }
+        "*" -> {
+            val Multiply = calculator.Multiply()
+            println(Multiply)
+        }
 
-    "/" -> {
-        val Divide = caculater.Divide()
-        println(Divide)
-    }
+        "/" -> {
+            val Divide = calculator.Divide()
+            println(Divide)
+        }
 
-    "%" -> {
-        val remain = caculater.remain() 
-        println(remain) 
-    }
+        "%" -> {
+            val remain = calculator.remain()
+            println(remain)
+        }
 
         else -> println("잘못된 입력입니다. 입력을 확인해주세요.")
-}
+    }
 
 
 }
