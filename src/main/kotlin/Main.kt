@@ -175,6 +175,7 @@ fun main() {
 }
 *//**/
 
+/*
 // exception 예시
 fun main() {
     val result = divide(10, 0)
@@ -183,4 +184,20 @@ fun main() {
 
 fun divide(a: Int, b: Int): Int {
     return a / b
+}*/
+
+fun main() {
+    val string = "123"
+
+//    string.toInt()
+    println(safeIntegerConversion(string))
+
+}
+
+fun safeIntegerConversion(value: String): Int {
+    return try {
+        value.toInt()
+    } catch (e: NumberFormatException) {
+        0
+    }
 }
