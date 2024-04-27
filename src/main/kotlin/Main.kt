@@ -154,7 +154,7 @@ fun main() {
         }
     }.forEach { println(it) }
 }*/
-
+/*
 //nullable type
 fun main() {
     val nullableString1: String? = "this is nullalble string"
@@ -172,4 +172,15 @@ fun main() {
     nullableString3?.let {
         println(it.length)
     }
+}
+*//**/
+
+// exception 예시
+fun main() {
+    val result = divide(10, 0)
+    println(result)
+}
+
+fun divide(a: Int, b: Int): Int {
+    return a / b
 }
