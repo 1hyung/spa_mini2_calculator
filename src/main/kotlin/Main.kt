@@ -115,6 +115,9 @@ fun main() {
     println(listFromMap)
 }*/
 
+
+/*
+//고차함수 활용
 fun main() {
     val people = listOf(
         mapOf("name" to "김르탄", "age" to 27),
@@ -150,4 +153,23 @@ fun main() {
             false
         }
     }.forEach { println(it) }
+}*/
+
+//nullable type
+fun main() {
+    val nullableString1: String? = "this is nullalble string"
+
+    if (nullableString1 != null) {
+        println(nullableString1.length)
+    }
+
+    val nullableString2: String? = null
+
+    println((nullableString2 ?: "").length)
+
+    val nullableString3: String? = "this is nullalble string"
+
+    nullableString3?.let {
+        println(it.length)
+    }
 }
